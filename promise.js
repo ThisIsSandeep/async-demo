@@ -1,8 +1,8 @@
 // Promise is an object that holds the eventual result of an asynchronous operation
-const p = new Promise((resolved, reject) => {
+const p = new Promise((resolve, reject) => {
   // Kick off some async work
   setTimeout(() => {
-    resolved(1);
+    resolve(1);
     // reject(new Error('message'));
   }, 2000);
 });
